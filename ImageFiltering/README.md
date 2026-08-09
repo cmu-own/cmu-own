@@ -1,12 +1,14 @@
-# Image Filtering
+# 🖼️ Image Filtering Tutorial
 
-Welcome to the **Image Filtering** project repository! This directory contains Jupyter Notebook implementations and experiments for fundamental Image Processing and Computer Vision filtering techniques.
+Welcome to the **Image Filtering** tutorial repository! This directory contains Jupyter Notebook implementations and step-by-step visual experiments for fundamental Image Processing and Computer Vision filtering techniques.
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cmu-own/cmu-own/blob/main/ImageFiltering/image_filtering.ipynb)
 
 ---
 
 ## 📌 Overview
 
-Image filtering is a core technique in computer vision used for image enhancement, noise reduction, edge detection, and feature extraction. This project explores various spatial domain image filtering techniques using Python.
+Image filtering is a core spatial-domain technique in computer vision used for image enhancement, noise reduction, edge detection, and feature extraction. This tutorial demonstrates key OpenCV and NumPy filtering algorithms using Python.
 
 ---
 
@@ -14,30 +16,34 @@ Image filtering is a core technique in computer vision used for image enhancemen
 
 ```
 ImageFiltering/
-├── image_filtering.ipynb   # Jupyter Notebook containing code implementations & visual outputs
+├── image_filtering.ipynb   # Complete step-by-step tutorial notebook with code & visuals
 └── README.md               # Project documentation
 ```
 
 ---
 
-## 🚀 Key Topics & Features
+## 🚀 Topics Covered in the Tutorial
 
-- **Smoothing & Blurring Filters:**
-  - Mean / Box Filter
-  - Gaussian Blur
-- **Noise Reduction:**
-  - Median Filter (Salt-and-Pepper Noise removal)
-  - Bilateral Filter (Edge-preserving smoothing)
-- **Gradient & Edge Detection Filters:**
-  - Sobel Operator
-  - Laplacian Filter
-  - Sharpening Filters
+1. **Synthetic Sample Generation:** Creating geometric shapes & text with OpenCV.
+2. **Smoothing & Blurring Filters (Linear Filtering):**
+   - Box Filter (`cv2.blur`)
+   - Gaussian Blur (`cv2.GaussianBlur`)
+3. **Noise Reduction (Non-Linear Filtering):**
+   - Salt & Pepper Noise generation
+   - Median Filter (`cv2.medianBlur`)
+   - Bilateral Filter (`cv2.bilateralFilter`)
+4. **Edge Detection & Gradient Filters:**
+   - Sobel Filter (X & Y gradients)
+   - Laplacian Filter
+   - Canny Edge Detection (`cv2.Canny`)
+5. **Custom Kernel Convolution:**
+   - Image Sharpening using `cv2.filter2D()`
 
 ---
 
-## 🛠️ Prerequisites & Dependencies
+## 🛠️ Prerequisites & Installation
 
-Make sure you have the following Python libraries installed:
+To run the notebook locally, install the required packages:
 
 ```bash
 pip install numpy opencv-python matplotlib jupyter
@@ -47,6 +53,11 @@ pip install numpy opencv-python matplotlib jupyter
 
 ## 💻 How to Run
 
+### Option 1: Run Online in Google Colab 🚀
+Click the badge above or use this link:  
+[Open image_filtering.ipynb in Google Colab](https://colab.research.google.com/github/cmu-own/cmu-own/blob/main/ImageFiltering/image_filtering.ipynb)
+
+### Option 2: Run Locally
 1. Clone the repository:
    ```bash
    git clone https://github.com/cmu-own/cmu-own.git
@@ -64,4 +75,4 @@ pip install numpy opencv-python matplotlib jupyter
 
 ## 📝 License
 
-This project is open-source and available for educational purposes.
+This project is open-source and created for educational purposes.
